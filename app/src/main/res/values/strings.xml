@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MAYLA MALAKIAN</string>
+    <string name="withoutNet">Sem internet</string>
+    <string name="empty_field">Preencha esse campo corretamente</string>
+    <string name="salvotxt">Salvo com sucesso</string><!-- taskManager / rateUs-->
+    <string name="lembreteunico">Lembrete unico</string>
+    <string name="enviada">Enviada</string>
+    <string name="recebida">Recebida</string>
+    <string name="visualizada">Visualizada</string>
+    <string name="nomedocliente">Nome do cliente</string>
+    <string name="askpermition">Permita o acesso para continuar</string>
+    <string name="linkFB"><a href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</a></string>
+    <string name="linkGPS"><a href="https://www.google.com/policies/privacy/">Google Play Services</a></string>
+    <string name="linkFC"><a href="https://firebase.google.com/support/privacy/">Firebase Crashlytics</a></string>
+    <string name="unidademontaria">"R$ "</string>
+    <string name="help">Ajuda</string>
+</resources>

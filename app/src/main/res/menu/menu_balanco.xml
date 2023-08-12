@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option1"
+        android:icon="@drawable/ic_addbranco"
+        android:title="Fazer operação"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/addreforco"
+                android:title="Reforço"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/addretirada"
+                android:title="Retirada"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+</menu>

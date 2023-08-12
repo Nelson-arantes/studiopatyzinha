@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primaria">
+
+        <ImageView
+            android:id="@+id/closedialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_close_30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulário de cumpom de desconto"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Id"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/secundariaB"
+        app:boxStrokeErrorColor="@color/green"
+        app:endIconContentDescription="Apagar texto"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/secundariaB"
+        app:errorIconTint="@color/green"
+        app:errorTextColor="@color/black"
+        app:hintTextColor="@color/secundariaB">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="text"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cod"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Código"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/secundariaB"
+        app:boxStrokeErrorColor="@color/green"
+        app:endIconContentDescription="Apagar texto"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/secundariaB"
+        app:errorIconTint="@color/green"
+        app:errorTextColor="@color/black"
+        app:hintTextColor="@color/secundariaB">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="text"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.project.studiopatyzinha.pattern.SwitchPlus
+        android:id="@+id/valorPromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="5dp"
+        android:text="Cupom de valor percentual" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valPercent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Valor percentual"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:boxStrokeColor="@color/secundariaB"
+        app:boxStrokeErrorColor="@color/green"
+        app:endIconContentDescription="Apagar texto"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/secundariaB"
+        app:errorIconTint="@color/green"
+        app:errorTextColor="@color/black"
+        app:hintTextColor="@color/secundariaB"
+        app:suffixText="%">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valReal"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Valor real"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/secundariaB"
+        app:boxStrokeErrorColor="@color/green"
+        app:endIconContentDescription="Apagar texto"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/secundariaB"
+        app:errorIconTint="@color/green"
+        app:errorTextColor="@color/black"
+        app:hintTextColor="@color/secundariaB">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bntsalvardec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Salvar"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

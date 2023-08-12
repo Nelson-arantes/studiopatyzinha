@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_add_transicao"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/primaria"
+        android:text="Retirada"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/closedialog_add_trasicao"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_close_30"
+        app:layout_constraintBottom_toBottomOf="@+id/title_add_transicao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_add_transicao" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valor_transicao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Valor"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/secundariaB"
+        app:boxStrokeErrorColor="@color/green"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/secundariaB"
+        app:errorIconTint="@color/green"
+        app:errorTextColor="@color/black"
+        app:hintTextColor="@color/secundariaB"
+        app:endIconContentDescription="Apagar texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_add_transicao">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="numberDecimal"
+
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hora_trancisao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Data e hora"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/secundariaB"
+        app:boxStrokeErrorColor="@color/green"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/secundariaB"
+        app:endIconContentDescription="Apagar texto"
+        app:errorIconTint="@color/green"
+        app:errorTextColor="@color/black"
+        app:hintTextColor="@color/secundariaB"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor_transicao">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="number"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/salvar_transicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora_trancisao" />
+</androidx.constraintlayout.widget.ConstraintLayout>

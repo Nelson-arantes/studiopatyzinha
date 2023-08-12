@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Theme.studiopatyzinha">
+
+        <TextView
+            android:id="@+id/title_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/primaria"
+            android:gravity="center"
+            android:text="Publicações"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/closedialog_add_post"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="Voltar para as Tendências"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_close_30"
+            app:layout_constraintBottom_toBottomOf="@+id/title_add_post"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_add_post" />
+
+        <ImageView
+            android:id="@+id/pickup_image_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Adicionar foto nessa publicação"
+            android:src="@drawable/ic_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_add_post" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pubname_post"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:hint="Nome da publicação"
+            android:textColorHint="@color/secundariaB"
+            app:boxStrokeColor="@color/secundariaB"
+            app:errorIconTint="@color/green"
+            app:errorTextColor="@color/black"
+            app:boxStrokeErrorColor="@color/green"
+            app:hintTextColor="@color/secundariaB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pickup_image_add_post">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tags_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_add_post" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_add_post"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:hint="Comente algo"
+            android:textColorHint="@color/secundariaB"
+            app:boxStrokeColor="@color/secundariaB"
+            app:hintTextColor="@color/secundariaB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubname_post">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tags_add_post"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:hint="Tags"
+            android:textColorHint="@color/secundariaB"
+            app:boxStrokeColor="@color/secundariaB"
+            app:endIconDrawable="@drawable/ic_arrow_sendlittle"
+            app:endIconMode="clear_text"
+            app:endIconTint="@android:color/transparent"
+            app:endIconTintMode="src_atop"
+            app:hintTextColor="@color/secundariaB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_tags_add_post">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/publicar_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/primaria"
+            android:text="Publicar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tags_add_post" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

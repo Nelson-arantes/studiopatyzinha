@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_row_item_pattern"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_gravity="start"
+    android:paddingTop="10dp"
+    android:paddingEnd="7dp"
+    android:paddingStart="7dp"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/imageView_item_pattern"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_medicine_item_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageView_item_pattern"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Quant_per_cx_item_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name_modelo_item_pattern" />
+
+    <TextView
+        android:id="@+id/name_modelo_item_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="#506d85"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name_medicine_item_pattern"
+        app:layout_constraintStart_toEndOf="@+id/name_medicine_item_pattern"
+        app:layout_constraintTop_toTopOf="@+id/name_medicine_item_pattern" />
+
+    <TextView
+        android:id="@+id/nome_factory_item_pattern"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:textColor="#506d85"
+        app:layout_constraintStart_toStartOf="@+id/name_medicine_item_pattern"
+        app:layout_constraintTop_toBottomOf="@+id/name_medicine_item_pattern" />
+    <!-- preco origiinal-->
+    <TextView
+        android:id="@+id/nome_value_item_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#506d85"
+        app:layout_constraintStart_toStartOf="@+id/nome_factory_item_pattern"
+        app:layout_constraintTop_toBottomOf="@+id/nome_factory_item_pattern" />
+    <!-- preco caso tenha desconto-->
+
+    <TextView
+        android:id="@+id/nome_value_no_discount_item_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nome_value_item_pattern"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nome_quant_item_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center"
+
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/total_valor_item_pattern"
+        app:layout_constraintEnd_toEndOf="@+id/total_valor_item_pattern" />
+
+    <TextView
+        android:id="@+id/total_valor_item_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

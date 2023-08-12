@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaria">#FD9A9A</color>
+    <color name="primariaB">#D17E7E</color>
+    <color name="primariaBB">#AE6969</color>
+    <color name="primariaL">#FFB0B0</color>
+
+    <color name="secundariaL">#EED7CF</color>
+    <color name="secundaria">#f5a88c</color>
+    <color name="secundariaB">#B87E69</color>
+
+    <color name="terciaria">#D3B1DD60</color>
+    <color name="terciariaB">#D381A145</color>
+
+
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#1B7ABA</color>
+    <color name="teal_700">#013287</color>
+    <color name="whiteB">#6E6E6E</color>
+    <color name="cinza">#636363</color>
+    <color name="cinzaB">#4A4A4A</color>
+    <color name="green">#7EB657</color>
+
+</resources>

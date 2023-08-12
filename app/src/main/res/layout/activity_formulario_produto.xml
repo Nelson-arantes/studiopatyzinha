@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gerenciar.Formulario_produto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_formulario_produto"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/primaria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pickup_image_formProduto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_add" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idproduto"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Código"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:endIconContentDescription="Apagar texto"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nome"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:endIconContentDescription="Apagar texto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Nome"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/modelo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:endIconContentDescription="Apagar texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Modelo"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fabricante"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Fabricante"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:endIconContentDescription="Apagar texto"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descricao"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Descrição"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:endIconContentDescription="Apagar texto"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/preco"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                app:endIconContentDescription="Apagar texto"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Preco"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.project.studiopatyzinha.pattern.SwitchPlus
+                android:id="@+id/ifdesconto"
+                android:layout_width="match_parent"
+                android:contentDescription="Se haverá desconto"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:text="Terá desconto" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/desconto"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconContentDescription="Apagar texto"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Desconto"
+                android:textColorHint="@color/black"
+                android:visibility="gone"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/quant_per_cx"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Quant. p/ cx"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+                <TextView
+                    android:layout_gravity="center"
+
+                    android:text="Ex: 1 Litro / 1 Kg / 1 metro / 1 Unidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usosindicados"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Usos indicados"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usosnindicados"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Usos NÃO indicados"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/quant_minima"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Quant. mínima"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/quant_atual"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="5dp"
+                android:hint="Quant. atual"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/secundariaB"
+                app:boxStrokeErrorColor="@color/green"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/secundariaB"
+                app:errorIconTint="@color/green"
+                app:errorTextColor="@color/black"
+                app:hintTextColor="@color/secundariaB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/bntsalvarproduto"
+                android:text="Salvar"
+                android:textAllCaps="false"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/parent_item_remedio"
+        android:layout_marginRight="6dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_gravity="center"
+        android:background="@color/secundariaB"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:id="@+id/iv_model"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintDimensionRatio="1:1"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/ll_discount"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_discount"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:text="Desconto"
+                android:textColor="@android:color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_first_line_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+             card_view:layout_constraintTop_toBottomOf="@+id/iv_model"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Captoprilsd sdadsaidjsaoidj saiodiosajdoisajodijsaoosiajdoias djioasjdoiosaijdoaisjdoiasjd iosajdosaijdoiasjdosaoijdoiasjd oisajdoisa"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/v_first_horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            card_view:layout_constraintTop_toBottomOf="@+id/ll_first_line_container"
+            android:layout_below="@+id/ll_first_line_container"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/primariaB" />
+
+        <TextView
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/v_first_horizontal_line"
+            android:id="@+id/tv_price_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_first_horizontal_line"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="R$ 180,00"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            card_view:layout_constraintTop_toBottomOf="@+id/v_first_horizontal_line"
+            card_view:layout_constraintRight_toLeftOf="@+id/tv_price_current"
+            android:id="@+id/tv_price_without_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_first_horizontal_line"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toStartOf="@+id/tv_price_current"
+            android:layout_toLeftOf="@+id/tv_price_current"
+            android:background="@drawable/tv_strike_through"
+            android:text="R$ 200,00"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

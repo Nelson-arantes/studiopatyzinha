@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_laucher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_laucher"
+        android:roundIcon="@drawable/ic_laucher"
+        android:theme="@style/Theme.studiopatyzinha">
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DescontoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".gerenciar.Produtosadm"
+            android:exported="false" />
+        <activity
+            android:name=".gerenciar.Formulario_produto"
+            android:exported="false" />
+        <activity
+            android:name=".DetalhesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Produtos"
+            android:exported="false" />
+        <activity
+            android:name=".Pedidos"
+            android:exported="false" />
+        <activity
+            android:name=".livroCaixa"
+            android:exported="false" />
+        <activity
+            android:name=".gerenciar.Balanco"
+            android:exported="false" />
+        <activity
+            android:name=".Servicos"
+            android:exported="false" />
+        <activity
+            android:name=".gerenciar.Funcionarios"
+            android:exported="false" />
+        <activity
+            android:name=".gerenciar.Rotina"
+            android:exported="false" />
+        <activity
+            android:name=".Gerenciar"
+            android:exported="false" />
+        <activity
+            android:name=".Subordinados"
+            android:exported="false" />
+        <activity
+            android:name=".VerOpinioes"
+            android:exported="false" />
+        <activity
+            android:name=".PoliticasPrivacidade"
+            android:exported="false" />
+        <activity
+            android:name=".rateUs"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".Sup"
+            android:exported="false" />
+        <activity
+            android:name=".Configuracoes"
+            android:exported="false" />
+        <activity
+            android:name=".AccountInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Add_agendamento"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamentos"
+            android:exported="false" />
+        <activity
+            android:name=".AgendamentosAdmin"
+            android:exported="false" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".Chat_activity"
+            android:exported="false" />
+        <activity
+            android:name=".preChat"
+            android:exported="false" />
+        <activity
+            android:name=".TaskManager"
+            android:exported="false" />
+        <activity
+            android:name=".Perfilbarber"
+            android:exported="false" />
+        <activity
+            android:name=".Comentar"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".CropperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name=".services.notificationListener"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name=".Broadcast.alarmreceiverbroadcast"
+            android:enabled="true" />
+        <receiver
+            android:name=".Broadcast.estouchegandobroadcast"
+            android:enabled="true" />
+        <receiver
+            android:name=".Broadcast.diaPagamentoBroadCast"
+            android:enabled="true" />
+
+        <service
+            android:name=".services.taskservice"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".services.estouChegandoListenerService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>
