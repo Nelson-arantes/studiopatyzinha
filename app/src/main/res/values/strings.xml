@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MAYLA MALAKIAN</string>
+    <string name="app_name">StudioPatyzinha</string>
     <string name="withoutNet">Sem internet</string>
     <string name="empty_field">Preencha esse campo corretamente</string>
     <string name="salvotxt">Salvo com sucesso</string><!-- taskManager / rateUs-->

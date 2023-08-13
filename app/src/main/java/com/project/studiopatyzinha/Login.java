@@ -78,8 +78,8 @@ public class Login extends AppCompatActivity {
         int v = 0;
         TextInputLayout emailed = findViewById(R.id.email);
         TextInputLayout senhaed = findViewById(R.id.pass);
-//        emailed.getEditText().setText("burismpr@gmail.com");
-//        senhaed.getEditText().setText("TonqA98y");
+//        emailed.getEditText().setText("s@.com");
+//        senhaed.getEditText().setText("s");
 
         Button entrar = findViewById(R.id.entrar);
         Button singup = findViewById(R.id.singup);

@@ -63,10 +63,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="  Nelson Otávio construiu o aplicativo studioPatyzinha como um aplicativo Freemium. Este SERVIÇO é prestado por Nelson Otávio sem nenhum custo e deve ser utilizado no estado em que se encontra.\n\n
+                android:text="  Nelson Otávio construiu o aplicativo StudioPatyzinha como um aplicativo Freemium. Este SERVIÇO é prestado por Nelson Otávio sem nenhum custo e deve ser utilizado no estado em que se encontra.\n\n
     Esta página é usada para informar os visitantes sobre minhas políticas de coleta, uso e divulgação de Informações Pessoais, caso alguém decida usar meu Serviço.\n\n
     Se você optar por usar meu Serviço, você concorda com a coleta e uso de informações em relação a esta política. As Informações Pessoais que recolho são utilizadas para fornecer e melhorar o Serviço. Não irei usar ou compartilhar suas informações com ninguém, exceto conforme descrito nesta Política de Privacidade.\n\n
-    Os termos usados nesta Política de Privacidade têm os mesmos significados que em nossos Termos e Condições, que podem ser acessados no Mayla Malakian, a menos que definido de outra forma nesta Política de Privacidade."
+    Os termos usados nesta Política de Privacidade têm os mesmos significados que em nossos Termos e Condições, que podem ser acessados no StudioPatyzinha, a menos que definido de outra forma nesta Política de Privacidade."
                 android:textColor="@color/black" />
 
             <TextView

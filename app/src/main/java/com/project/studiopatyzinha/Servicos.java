@@ -318,7 +318,7 @@ public class Servicos extends AppCompatActivity {
                     servico.setIfpromocao(haspromotion.isChecked() + "");
                     servico.setFuncs(funcsnomesworks);
                     servico.setSelected("");
-                    StorageReference firebase = FirebaseStorage.getInstance("gs://mayla-a286b.appspot.com").getReference().child("imagens servico").child(idETL.getEditText().getText().toString().trim());
+                    StorageReference firebase = FirebaseStorage.getInstance("gs://patricia-53cb0.appspot.com").getReference().child("imagens servico").child(idETL.getEditText().getText().toString().trim());
                     firebase.putFile(filepath).addOnSuccessListener(command -> {
                         firebase.getDownloadUrl().addOnSuccessListener(uri -> {
                             servico.setFt(uri + "");
@@ -556,7 +556,7 @@ public class Servicos extends AppCompatActivity {
                 if (filepath != null) {
                     progressDialog.setTitle("Editando serviço");
                     progressDialog.show();
-                    StorageReference firebase = FirebaseStorage.getInstance("gs://mayla-a286b.appspot.com").getReference().child("imagens servico").child(idETL.getEditText().getText().toString().trim());
+                    StorageReference firebase = FirebaseStorage.getInstance("gs://patricia-53cb0.appspot.com").getReference().child("imagens servico").child(idETL.getEditText().getText().toString().trim());
                     firebase.putFile(filepath).addOnSuccessListener(command -> {
                         firebase.getDownloadUrl().addOnSuccessListener(uri -> {
                             servicon.setFt(uri + "");

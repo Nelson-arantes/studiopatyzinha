@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "685488233845",
-    "project_id": "mayla-a286b",
-    "storage_bucket": "mayla-a286b.appspot.com"
+    "project_number": "97442696195",
+    "firebase_url": "https://patricia-53cb0-default-rtdb.firebaseio.com",
+    "project_id": "patricia-53cb0",
+    "storage_bucket": "patricia-53cb0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:685488233845:android:a24e3a411109952348873c",
+        "mobilesdk_app_id": "1:97442696195:android:8ab41960be86b9350f1236",
         "android_client_info": {
           "package_name": "com.project.studiopatyzinha"
         }
       },
       "oauth_client": [
         {
-          "client_id": "685488233845-937kg5k77qq4mhduanoli3dhs7tqrmb7.apps.googleusercontent.com",
+          "client_id": "97442696195-a26ggip80dv2nq460j0nkqhrgrufqspr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCAD2YMQevuws_rEj6uSoNnDh-H7lY29k4"
+          "current_key": "AIzaSyBiFmUKX3GJEUpmiozXidIHEQEMhvrPUrQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "685488233845-937kg5k77qq4mhduanoli3dhs7tqrmb7.apps.googleusercontent.com",
+              "client_id": "97442696195-a26ggip80dv2nq460j0nkqhrgrufqspr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

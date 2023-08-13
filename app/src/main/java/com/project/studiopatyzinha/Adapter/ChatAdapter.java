@@ -127,6 +127,7 @@ public class ChatAdapter extends RecyclerView.Adapter {
                     MessageModel message = snapshot.getValue(MessageModel.class);
                     try {
                         if (!message.getuId().equals(idpessoalocal)) {
+                            System.out.println("status -> "+message.getStatus());
                             if (!message.getStatus().contains("Visualizada")) {
                                 reference.child("chats").child(messageModel.getuId() + idpessoalocal).child(messageModel.getTimesStamp() + messageModel.getuId()).child("status").setValue("Visualizada");
                             }
